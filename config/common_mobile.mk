@@ -1,5 +1,5 @@
-# Inherit common mobile Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common mobile ocean stuff
+$(call inherit-product, vendor/ocean/config/common.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -39,9 +39,9 @@ endif
 PRODUCT_PACKAGES += \
     charger_res_images
 
-ifneq ($(WITH_LINEAGE_CHARGER),false)
+ifneq ($(WITH_ocean_CHARGER),false)
 PRODUCT_PACKAGES += \
-    lineage_charger_animation
+    ocean_charger_animation
 endif
 
 # Customizations
@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
     IconShapeTaperedRectOverlay \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay \
-    LineageNavigationBarNoHint \
+    oceanNavigationBarNoHint \
     NavigationBarMode2ButtonOverlay
 
 # Media

@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include oceanOS versions
+include $(TOPDIR)vendor/ocean/build/core/main_version.mk

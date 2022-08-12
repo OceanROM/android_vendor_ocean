@@ -1,11 +1,11 @@
-# Inherit full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full.mk)
+# Inherit full common ocean stuff
+$(call inherit-product, vendor/ocean/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
     androidx.window.extensions \
     LatinIME
 
-# Include Lineage LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/dictionaries
+# Include ocean LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/ocean/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/ocean/overlay/dictionaries
